@@ -62,6 +62,8 @@ Libraries Used
 
 License
 ========
+The source code is licensed under the Apache License 2.0. If you create your own app (free or commercial) that uses some or all of the code from this codebase, you MUST attribute it to the original author, no exceptions. You can do so by displaying an "About" or "Licenses" screen in your app that links back to this GitHub page. 
+
     Copyright 2014 - Saravan Pantham
 
     Licensed under the Apache License, Version 2.0 (the "License");
@@ -75,10 +77,6 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-    
-    If you decide to use this codebase in your own app and release it to the general public, 
-    you MUST include a copy of this license and attribute the original work back to this 
-    project and its author. You can do this via an "About" section in your app.
 
 
 
