@@ -87,9 +87,11 @@ public class AsyncApplyEQToGenreTask extends AsyncTask<String, Void, Void> {
         cursor.moveToPosition(which);
         String selectedGenre = cursor.getString(cursor.getColumnIndex(DBAccessHelper.SONG_GENRE));
         cursor.close();
+
+        String genreQuery = " AND " + DBAccessHelper.SONG_GENRE + "=" + "'"+selectedGenre+"'";
         
         //Get a cursor with all the songs in the specified genre.
-        final Cursor songsCursor = mApp.getDBAccessHelper().getAllSongsInGenre(selectedGenre);
+        final Cursor songsCursor = mApp.getDBAccessHelper().getAllSongsInGenre(genreQuery);
 		
 		//Loop through the songs in the genre and add them to the EQ settings DB with the current EQ settings.
 		if (songsCursor!=null && songsCursor.getCount() > 0) {
