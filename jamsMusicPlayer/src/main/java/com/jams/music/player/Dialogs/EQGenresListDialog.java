@@ -69,6 +69,9 @@ public class EQGenresListDialog extends DialogFragment {
 				
 				if (cursor!=null)
 					cursor.close();
+
+                //Hide the equalizer fragment.
+                getActivity().finish();
 				
 			}
 			
