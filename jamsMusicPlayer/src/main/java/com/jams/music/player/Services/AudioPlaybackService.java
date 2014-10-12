@@ -223,7 +223,7 @@ public class AudioPlaybackService extends Service {
         mAudioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
   
         //Initialize Google Analytics.
-        initGoogleAnalytics();
+        //initGoogleAnalytics();
         
         //Initialize the MediaPlayer objects.
         initMediaPlayers();
@@ -2266,6 +2266,23 @@ public class AudioPlaybackService extends Service {
      * False, otherwise.
      */
     public boolean skipToPreviousTrack() {
+
+        /*
+         * If the current track is not within the first three seconds,
+         * reset it. If it IS within the first three seconds, skip to the
+         * previous track.
+         */
+        try {
+            if (getCurrentMediaPlayer().getCurrentPosition() > 3000) {
+                getCurrentMediaPlayer().seekTo(0);
+                return true;
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
     	try {
     		//Reset both MediaPlayer objects.
     		getMediaPlayer().reset();
