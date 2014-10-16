@@ -29,7 +29,7 @@ Features
 Forked Projects
 ================
 
-<a href="http://forum.xda-developers.com/android/apps-games/complete-material-design-acemusic-t2904994">ACEMusic Player (Beta)</a>
+* <a href="http://forum.xda-developers.com/android/apps-games/complete-material-design-acemusic-t2904994">ACEMusic Player (Beta)</a>
 
 If you're using Jams' codebase in your current project/app and would like to have it featured here, email me at saravan.pantham@gmail.com.
 
